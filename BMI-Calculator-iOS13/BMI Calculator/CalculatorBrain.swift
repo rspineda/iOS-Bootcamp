@@ -28,4 +28,11 @@ struct CalculatorBrain {
         let bmiTo1DecimalPlace = String(format: "%.1f", bmi?.value ?? 0.0)
         return bmiTo1DecimalPlace
     }
+    
+    func getAdvice() -> String {
+        return bmi?.advice ?? ""
+    }
+    func getColor() -> UIColor {
+        return bmi?.color ?? UIColor.gray
+    }
 }
